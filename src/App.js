@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import DeviceDetalis from './components/DeviceDetails/DeviceDetalis';
+import Phone from './components/Phone/Phone';
+import Watch from './components/Watch/Watch';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Phone name='u-phone' price='13000' details='this phone is very powerful'></Phone>
+      <DeviceDetalis details='This is most cost device'></DeviceDetalis>
+      <Watch></Watch>
     </div>
   );
 }
